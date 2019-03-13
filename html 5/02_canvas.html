@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas HTML5</title>
+</head>
+<body>
+	<h4>Rectangulo</h4>
+	<canvas id="cuadrado"></canvas>
+
+	<h4>Rectangulo</h4>
+	<canvas id="rectangulo"></canvas>
+
+	<h4>Triangulo</h4>
+	<canvas id="Triangulo"></canvas>
+
+	<h4>Rectangulo</h4>
+	<canvas id="cuadrado"></canvas>
+
+	<h4>Rectangulo</h4>
+	<canvas id="cuadrado"></canvas>
+
+	<h4>Rectangulo</h4>
+	<canvas id="cuadrado"></canvas>
+
+	<script>
+		//Cuadrado ---------------------------------------
+		var canvas   = document.getElementById('cuadrado');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.fillRect(0,0,100,100);
+
+		//Cuadrado ---------------------------------------
+		var canvas   = document.getElementById('rectangulo');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.fillRect(0,0,250,100);
+
+		//Triangulo ---------------------------------------
+		var canvas   = document.getElementById('triangulo');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.beginPatch();
+		ctx.moveTo(10,110);
+		ctx.lineTo(110,10)
+		ctx,lineTo(210,110);
+		ctx.fill();
+		//Cuadrado ---------------------------------------
+		var canvas   = document.getElementById('cuadrado');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.fillRect(0,0,100,100);
+
+		//Cuadrado ---------------------------------------
+		var canvas   = document.getElementById('cuadrado');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.fillRect(0,0,100,100);
+
+		//Cuadrado ---------------------------------------
+		var canvas   = document.getElementById('cuadrado');
+		var ctx      = canvas.getContext('2d');
+		ctx.fillStyle='#f00';
+		ctx.fillRect(0,0,100,100);
+	</script>
+</body>
+</html>
